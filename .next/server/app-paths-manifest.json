@@ -3,6 +3,6 @@
   "/journee/page": "app/journee/page.js",
   "/contact/page": "app/contact/page.js",
   "/cadeaux/page": "app/cadeaux/page.js",
-  "/page": "app/page.js",
-  "/rsvp/page": "app/rsvp/page.js"
+  "/rsvp/page": "app/rsvp/page.js",
+  "/page": "app/page.js"
 }
