@@ -29,11 +29,11 @@ export default function Countdown({ targetDate }: CountdownProps) {
     const seconds = Math.floor((timeLeft / 1000) % 60)
 
     return (
-        <div className="text-center text-2xl font-serif text-primary space-x-2">
-            <span>{days}j</span>
-            <span>{hours}h</span>
-            <span>{minutes}m</span>
-            <span>{seconds}s</span>
+        <div className="countdown-container text-center text-2xl text-primary space-x-2">
+            <span className="countdown-item"><span className="countdown-item-value">{days}</span><span className="countdown-item-label">jours</span></span>
+            <span className="countdown-item"><span className="countdown-item-value">{hours}</span><span className="countdown-item-label">heures</span></span>
+            <span className="countdown-item"><span className="countdown-item-value">{minutes}</span><span className="countdown-item-label">minutes</span></span>
+            <span className="countdown-item"><span className="countdown-item-value">{seconds}</span><span className="countdown-item-label">secondes</span></span>
         </div>
-    )
+)
 }

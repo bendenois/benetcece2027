@@ -1,5 +1,181 @@
+html{
+  height: 100%;
+}
 body {
   margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Playfair Display';
+  .topbar{
+    background-color: white;
+    align-items: center;
+  }
+  .topbar-initials {
+    flex: 1 0 50px;
+    font-family: 'Alex Brush';
+    font-size: 30px;
+    color: #E4A79A;
+    margin-left: 14px;
+  }
+  .topbar-navigation{
+    display: flex;
+    align-items: center;
+  }
+  .button {
+    margin: 14px;
+    font-size: 18px;
+    color: #E4A79A;
+    font-family: 'Playfair Display';
+    &.active {
+      text-decoration: underline;
+    }
+    &:hover {
+      text-decoration: underline;
+      color: #C4795C;
+    }
+    &.primary-button {
+      background-color: #E4A79A;
+      border-radius: 40px;
+      color: white;
+      padding: 7px;
+      margin-left: 30px;
+      &:hover{
+        background-color: #C4795C;
+      }
+    }
+  }
+  .countdown-container{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 40px;
+    margin-bottom: 30px;
+    color: #F4EAD2;
+    .countdown-item{
+      background-color: white;
+      height: 120px;
+      width: 120px;
+      border-radius: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #E4A79A;
+      border-left: 1px solid white;
+      border-bottom: 1px solid white;
+      border-top: 1px solid #e2e4e3;
+      border-right: 1px solid #e2e4e3;
+      box-shadow: rgba(0, 0, 0, 0.8) 1px -1px 2px;
+      font-family: 'Playfair Display';
+      .countdown-item-value{
+        font-size: 30px;
+      }
+      .countdown-item-label{
+        font-size: 14px;
+      }
+    }
+  }
+  .wedding-title{
+    display: flex;
+    justify-content: center;
+    font-family: 'Alex Brush';
+    font-size: 100px;
+    color: #F4EAD2;
+  }
+  .icon-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    color: #F4EAD2;
+    font-size: 20px;
+    margin: 20px 100px;
+    .icon-line-item{
+      flex: 1;
+      height: 1px;
+      background-color: #F4EAD2;
+    }
+    .icon-line-image{
+      height: 35px;
+      width: 35px;
+      z-index: 100;
+      filter: brightness(0) saturate(100%) invert(91%) sepia(28%) saturate(152%) hue-rotate(358deg) brightness(100%) contrast(92%);
+    }
+  }
+  .image-carousel{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+    margin-top: 40px;
+    .image{
+      min-width: 150px;
+      max-width: 350px;
+      flex: 1;
+    }
+  }
+  .empty-container{
+    flex: 1;
+  }
+  .topbar-body {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    .side-panel{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: center;
+      margin-bottom: 100px;
+      &.left-panel{
+        align-items: start;
+        align-self: start;
+        margin: 20px;
+      }
+      &.right-panel{
+        align-items: end;
+        align-self: end;
+        margin: 20px;
+      }
+      .title{
+        color: #F4EAD2;
+        font-size: 26px;
+      }
+      .value{
+        color: #F4EAD2;
+        font-size: 18px;
+        span{
+          display: block;
+        }
+      }
+    }
+    .center-panel{
+      width: 350px;
+      height: 500px;
+      position: relative;
+      z-index: 100;
+      .wedding-title{
+        color: #F4EAD2;
+        .wedding-title-names{
+          font-size: 36px;
+        }
+        .wedding-title-text{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+.main-container{
+  flex: 1;
+  .flex{
+    height: 100%;
+    .topbar-body{
+      height: 100%;
+    }
+  }
 }
 @tailwind base;
 @tailwind components;

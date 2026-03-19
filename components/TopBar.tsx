@@ -10,19 +10,33 @@ interface TopBarProps {
 
 export default function TopBar({ imageSrc }: TopBarProps) {
     return (
-        <div className="relative w-full h-80 md:h-96">
-            <Image
-                src={imageSrc}
-                alt="Top banner"
-                fill
-                className="object-cover brightness-75"
-                priority
-            />
-            <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-background px-4">
-                <h1 className="text-4xl md:text-6xl font-serif font-bold drop-shadow-lg">
-                    Benjamin & Céline
-                </h1>
-                <p className="mt-2 text-lg md:text-2xl drop-shadow-md">24 juillet 2027</p>
+        <div className="topbar-body">
+            <div className="side-panel left-panel">
+                <div className="inner-side-panel">
+                    <div className="title">Quand :</div>
+                    <div className="value"><span>Samedi</span><span>24 juillet 2027</span></div>
+                </div>
+            </div>
+            <div className="center-panel">
+                <Image
+                    src={imageSrc}
+                    alt="Top banner"
+                    fill
+                    className="brightness-75 center-image"
+                    priority
+                />
+                <div className="wedding-title absolute inset-0 flex flex-col items-center text-center">
+                    <h1 className="wedding-title-names text-4xl font-serif font-bold drop-shadow-lg">
+                        Benjamin & Céline
+                    </h1>
+                    <p className="wedding-title-text mt-2 text-lg drop-shadow-md">Vous invitent à célébrer leur mariage</p>
+                </div>
+            </div>
+            <div className="side-panel right-panel">
+                <div className="inner-side-panel">
+                    <div className="title">Où :</div>
+                    <div className="value"><span>Domaine de Valmont</span><span>Barsac</span></div>
+                </div>
             </div>
         </div>
     )
