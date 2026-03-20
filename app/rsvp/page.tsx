@@ -199,7 +199,7 @@ const s: Record<string, React.CSSProperties> = {
     submitBtn: {
         width: "100%",
         padding: "16px",
-        background: c.terracotta,
+        background: c.primary,
         border: "none",
         borderRadius: 3,
         color: c.white,
