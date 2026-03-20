@@ -1,0 +1,54 @@
+// prisma/schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Rsvp {
+  id               String      @id @default(cuid())
+
+  firstName        String
+  lastName         String
+  email            String      @unique
+
+  attending        Boolean
+  attendingBrunch  Boolean     @default(false)
+  arrivalDay       ArrivalDay?
+
+  menuChoice       MenuChoice  @default(STANDARD)
+  allergies        String?
+
+  hasPlusOne       Boolean     @default(false)
+  plusOneFirstName String?
+  plusOneLastName  String?
+  plusOneMenu      MenuChoice?
+  plusOneAllergies  String?
+
+  childrenCount    Int         @default(0)
+
+  submittedAt      DateTime    @default(now())
+  updatedAt        DateTime    @updatedAt
+}
+
+enum ArrivalDay {
+  FRIDAY
+  SATURDAY
+}
+
+enum MenuChoice {
+  STANDARD
+  VEGETARIAN
+}
+
+model GameEntry {
+  id          String   @id @default(cuid())
+  playerName  String
+  answers     Json
+  score       Int?
+  submittedAt DateTime @default(now())
+}

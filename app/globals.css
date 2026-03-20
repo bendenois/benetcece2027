@@ -7,6 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Playfair Display';
+  min-width: 551px;
   .topbar{
     background-color: white;
     align-items: center;
@@ -45,6 +46,9 @@ body {
       }
     }
   }
+  .countdown{
+    align-self: center;
+  }
   .countdown-container{
     display: flex;
     justify-content: center;
@@ -82,6 +86,7 @@ body {
     font-family: 'Alex Brush';
     font-size: 100px;
     color: #F4EAD2;
+    text-align: center;
   }
   .icon-line{
     display: flex;

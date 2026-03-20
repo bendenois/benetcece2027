@@ -6,9 +6,8 @@ import { usePathname } from 'next/navigation'
 const links = [
     { href: '/', label: 'Accueil' },
     { href: '/journee', label: 'Journée' },
-    { href: '/cadeaux', label: 'Cadeaux' },
-    { href: '/contact', label: 'Contact' },
-    { href: '/rsvp', label: 'RSVP' },
+    { href: '/jeu', label: 'Jeu' },
+    { href: '/rsvp', label: 'Formulaire' },
 ]
 
 export default function Navbar() {
@@ -19,7 +18,7 @@ export default function Navbar() {
             {links.map((link) => {
                 const isActive = pathname === link.href;
                 return (
-                    <Link key={link.href} href={link.href} className={`button ${isActive ? 'active' : ''} ${link.label == 'RSVP' ? 'primary-button' : ''}`}>
+                    <Link key={link.href} href={link.href} className={`button ${isActive ? 'active' : ''} ${link.label == 'Formulaire' ? 'primary-button' : ''}`}>
                         {link.label}
                     </Link>
                 )
