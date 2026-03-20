@@ -18,6 +18,7 @@ body {
     font-size: 30px;
     color: #E4A79A;
     margin-left: 14px;
+    margin-top: 10px;
   }
   .topbar-navigation{
     display: flex;
@@ -39,7 +40,7 @@ body {
       background-color: #E4A79A;
       border-radius: 40px;
       color: white;
-      padding: 7px;
+      padding: 10px;
       margin-left: 30px;
       &:hover{
         background-color: #C4795C;

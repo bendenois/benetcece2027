@@ -1,9 +1,9 @@
 {
   "pages": {
-    "/rsvp/page": [
+    "/journee/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/rsvp/page.js"
+      "static/chunks/app/journee/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -16,10 +16,20 @@
       "static/chunks/main-app.js",
       "static/chunks/app/jeu/page.js"
     ],
-    "/journee/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/journee/page.js"
+      "static/chunks/app/page.js"
+    ],
+    "/rsvp/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/rsvp/page.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }

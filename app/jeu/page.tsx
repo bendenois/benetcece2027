@@ -362,7 +362,7 @@ export default function jeu() {
         <div style={s.page}>
             {/* Hero */}
             <div style={s.hero}>
-                <p style={s.heroEyebrow}>Léa &amp; Thomas · 14 Juin 2025</p>
+                <p style={s.heroEyebrow}>Benjamin &amp; Céline · 24 Juillet 2027</p>
                 <h1 style={s.heroTitle}>
                     Chocolatine ou<br />pain au chocolat
                 </h1>

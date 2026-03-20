@@ -103,7 +103,7 @@ export default function journee() {
                         {/* Carte Google Maps */}
                         <div style={{ height: 340, background: c.creamDark }}>
                             <iframe
-                                src="https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=Domaine+de+Valmont,Barsac,France&zoom=14"
+                                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBvuX2bG4zoq9yUD8DkseErqBjZfqtX8Do&q=Chateau+Hotel+Domaine+de+Valmont,Barsac,France&zoom=14"
                                 width="100%"
                                 height="340"
                                 style={{ border: 0, display: "block" }}
