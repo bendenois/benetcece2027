@@ -101,12 +101,22 @@ export default function journee() {
                         </div>
 
                         {/* Carte Google Maps */}
-                        <div style={{ height: 340, background: c.creamDark }}>
+                        <div style={{
+                            position: "relative",
+                            width: "100%",
+                            paddingBottom: "56.25%",
+                            background: c.creamDark
+                        }}>
                             <iframe
                                 src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&q=Chateau+Hotel+Domaine+de+Valmont,Barsac,France&zoom=14`}
-                                width="100%"
-                                height="340"
-                                style={{ border: 0, display: "block" }}
+                                style={{
+                                    position: "absolute",
+                                    top: 0, left: 0,
+                                    width: "100%",
+                                    height: "100%",
+                                    border: 0,
+                                    display: "block",
+                                }}
                                 allowFullScreen
                                 loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade"
@@ -114,7 +124,7 @@ export default function journee() {
                         </div>
 
                         {/* Lien itinéraire */}
-                        <div style={{ padding: "16px 36px", borderTop: `1px solid ${c.creamDark}` }}>
+                        <div style={{padding: "16px 36px", borderTop: `1px solid ${c.creamDark}` }}>
                             <a
                                 href="https://maps.google.com/?q=Domaine+de+Valmont,+Barsac,+France"
                                 target="_blank"
@@ -214,7 +224,7 @@ export default function journee() {
                 <div style={{ marginTop: 72 }}>
                     <SectionHeader label="Contacts" title="Nous joindre" color={c} />
 
-                    <div style={{
+                    <div className="journee-contact-section" style={{
                         display: "grid",
                         gridTemplateColumns: "1fr 1fr",
                         gap: 20,

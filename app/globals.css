@@ -184,6 +184,64 @@ body {
     }
   }
 }
+
+@media (max-width: 500px) {
+  body{
+    min-width: auto;
+    .topbar{
+      svg{
+        display: none;
+      }
+      .topbar-initials{
+        font-size: 20px;
+        margin-left: 7px;
+      }
+      .button{
+        margin-left: 0;
+        font-size: 14px;
+      }
+    }
+    .main-container{
+      .countdown-container{
+        margin-left: 7px;
+        margin-right: 7px;
+        gap: 7px;
+        .countdown-item{
+          height: 60px;
+          width: 60px;
+          .countdown-item-value{
+            font-size: 24px;
+            top: 7px;
+            position: relative;
+          }
+          .countdown-item-label{
+            font-size: 9px;
+          }
+        }
+      }
+      .icon-line{
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      section{
+        div:first-child{
+          display: flex;
+          flex-direction: column;
+          margin-top: 15px !important;
+          div{
+            margin: 0 !important;
+            position: initial !important;
+          }
+        }
+      }
+    }
+  }
+  .journee-contact-section{
+    display: flex !important;
+    flex-direction: column;
+  }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
