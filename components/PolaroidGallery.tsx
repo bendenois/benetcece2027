@@ -26,7 +26,7 @@ const PHOTOS: Photo[] = [
     { src: "/images/mariage2.jpeg", caption: "Le Japon 💍",         alt: "Le Japon" },
     { src: "/images/mariage4.JPG", caption: "Le bière pong",          alt: "Le bière pong" },
     { src: "/images/mariage5.JPG", caption: "La photo instagram",        alt: "La photo instagram" },
-    { src: "/images/mariage3.JPG", caption: "Les voyages",        alt: "Les voyages" },
+    { src: "/images/mariage3.JPG", caption: "Bali",        alt: "Bali" },
     { src: "/images/mariage7.jpeg", caption: "London baby",   alt: "Londres" },
 ];
 
