@@ -326,7 +326,7 @@ export default function jeu() {
         return (
             <div style={s.page}>
                 <div style={s.hero}>
-                    <p style={s.heroEyebrow}>Benjamin &amp; Céline · 24 Juillet 2027</p>
+                    <p style={s.heroEyebrow}>Benjamin &amp; Céline · 15 Juillet 2028</p>
                     <h1 style={s.heroTitle}>Chocolatine ou<br />pain au chocolat</h1>
                 </div>
                 <div style={s.wrap}>
