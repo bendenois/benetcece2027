@@ -374,10 +374,10 @@ export default function RSVP() {
         <div style={s.page}>
             {/* Hero */}
             <div style={s.hero}>
-                <p style={s.heroLabel}>Benjamin &amp; Céline · 24 Juillet 2027</p>
+                <p style={s.heroLabel}>Benjamin &amp; Céline · 15 Juillet 2028</p>
                 <h1 style={s.heroTitle}>Formulaire de présence</h1>
                 <p style={s.heroSub}>
-                    Merci de confirmer votre présence avant le 1er février 2027.
+                    Merci de confirmer votre présence avant le 1er février 2028.
                 </p>
             </div>
 
@@ -394,7 +394,7 @@ export default function RSVP() {
                                     style={{ ...s.input, borderColor: errors.firstName ? c.error : undefined }}
                                     value={form.firstName}
                                     onChange={(e) => set("firstName", e.target.value)}
-                                    placeholder="Marie"
+                                    placeholder="Zinédine"
                                 />
                                 {errors.firstName && <span style={s.errorMsg}>{errors.firstName}</span>}
                             </Field>
@@ -403,7 +403,7 @@ export default function RSVP() {
                                     style={{ ...s.input, borderColor: errors.lastName ? c.error : undefined }}
                                     value={form.lastName}
                                     onChange={(e) => set("lastName", e.target.value)}
-                                    placeholder="Dupont"
+                                    placeholder="Zidane"
                                 />
                                 {errors.lastName && <span style={s.errorMsg}>{errors.lastName}</span>}
                             </Field>
@@ -414,7 +414,7 @@ export default function RSVP() {
                                 type="email"
                                 value={form.email}
                                 onChange={(e) => set("email", e.target.value)}
-                                placeholder="marie@email.com"
+                                placeholder="tony.parker@email.com"
                             />
                             {errors.email && <span style={s.errorMsg}>{errors.email}</span>}
                         </Field>
@@ -517,7 +517,7 @@ export default function RSVP() {
                                                     style={{ ...s.input, borderColor: errors.plusOneFirstName ? c.error : undefined }}
                                                     value={form.plusOneFirstName}
                                                     onChange={(e) => set("plusOneFirstName", e.target.value)}
-                                                    placeholder="Pierre"
+                                                    placeholder="Nikola"
                                                 />
                                                 {errors.plusOneFirstName && <span style={s.errorMsg}>{errors.plusOneFirstName}</span>}
                                             </Field>
@@ -526,7 +526,7 @@ export default function RSVP() {
                                                     style={{ ...s.input, borderColor: errors.plusOneLastName ? c.error : undefined }}
                                                     value={form.plusOneLastName}
                                                     onChange={(e) => set("plusOneLastName", e.target.value)}
-                                                    placeholder="Martin"
+                                                    placeholder="Karabatic"
                                                 />
                                                 {errors.plusOneLastName && <span style={s.errorMsg}>{errors.plusOneLastName}</span>}
                                             </Field>

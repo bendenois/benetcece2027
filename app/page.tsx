@@ -9,7 +9,7 @@ import PolaroidGallery from "@/components/PolaroidGallery";
 export default function Home() {
     return (
         <div className="flex flex-col">
-            <div className="countdown"><Countdown targetDate="2027-07-24T15:00:00"/></div>
+            <div className="countdown"><Countdown targetDate="2028-07-15T15:00:00"/></div>
             <div className="wedding-title">Benjamin & Céline</div>
             <IconLine />
             <PolaroidGallery />

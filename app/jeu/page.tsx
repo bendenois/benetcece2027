@@ -410,7 +410,7 @@ export default function jeu() {
                                     style={{ ...s.input, borderColor: errors.firstName ? c.error : undefined }}
                                     value={firstName}
                                     onChange={(e) => { setFirstName(e.target.value); setErrors((err) => ({ ...err, firstName: "" })); }}
-                                    placeholder="Marie"
+                                    placeholder="Antoine"
                                 />
                                 {errors.firstName && <span style={s.errorMsg}>{errors.firstName}</span>}
                             </div>

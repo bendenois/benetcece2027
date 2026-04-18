@@ -14,7 +14,7 @@ export default function TopBar({ imageSrc }: TopBarProps) {
             <div className="side-panel left-panel">
                 <div className="inner-side-panel">
                     <div className="title">Quand :</div>
-                    <div className="value"><span>Samedi</span><span>24 juillet 2027</span></div>
+                    <div className="value"><span>Samedi</span><span>15 juillet 2028</span></div>
                 </div>
             </div>
             <div className="center-panel">
@@ -35,7 +35,7 @@ export default function TopBar({ imageSrc }: TopBarProps) {
             <div className="side-panel right-panel">
                 <div className="inner-side-panel">
                     <div className="title">Où :</div>
-                    <div className="value"><span>Domaine de Valmont</span><span>Barsac</span></div>
+                    <div className="value"><span>Chateau Pontach-Lynch</span><span>Margaux</span></div>
                 </div>
             </div>
         </div>

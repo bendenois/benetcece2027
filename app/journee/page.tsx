@@ -89,13 +89,13 @@ export default function journee() {
                             <InfoBlock
                                 icon="📅"
                                 label="Date"
-                                value="Vendredi 24 juillet 2027"
+                                value="Samedi 15 juillet 2028"
                                 color={c}
                             />
                             <InfoBlock
                                 icon="📍"
                                 label="Lieu"
-                                value={"Domaine de Valmont\nBarsac, 33720"}
+                                value={"Château Pontach-Lynch\nMargaux, 33460"}
                                 color={c}
                             />
                         </div>
@@ -108,7 +108,7 @@ export default function journee() {
                             background: c.creamDark
                         }}>
                             <iframe
-                                src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&q=Chateau+Hotel+Domaine+de+Valmont,Barsac,France&zoom=14`}
+                                src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&q=Chateau+Pontach-Lynch,Margaux,France&zoom=14`}
                                 style={{
                                     position: "absolute",
                                     top: 0, left: 0,
@@ -126,7 +126,7 @@ export default function journee() {
                         {/* Lien itinéraire */}
                         <div style={{padding: "16px 36px", borderTop: `1px solid ${c.creamDark}` }}>
                             <a
-                                href="https://maps.google.com/?q=Domaine+de+Valmont,+Barsac,+France"
+                                href="https://maps.google.com/?q=Chateau+Pontach-Lynch,+Margaux,+France"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 style={{
